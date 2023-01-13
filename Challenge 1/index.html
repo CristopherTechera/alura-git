@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <title>Challenge 1</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="m-1">
+            <img src="Alura Challenge - Desafío 1 - Lógica/Logo-1.png" alt ="logo">
+        </nav>
+        
+        <section>
+            <div class="row">
+                <div class="col-sm-1 col-7 m-3">
+                    <textarea name="text" id="text" cols="30" rows="10" class="text-area" placeholder="incerte el texto" autofocus></textarea>
+                    <p class="m-1" id="error"><img src="Vector (2).png" alt="icono"> solo letras minusculas y sin acento </p>
+
+                    <div class="row m-1">
+                        <div class="col-5 col-sm-2 m-1">
+                            <button class="btn btn-primary p-1" onclick="encriptar()">Encripar</button>
+                        </div>
+                        <div class="col-5 col-sm-2 m-1">
+                            <button class="btn btn-info p-1" onclick="desencriptar()">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2 col-4 m-1 card card2">
+                    <img src="Alura Challenge - Desafío 1 - Lógica/Muñeco.png" alt="imagen muneco" class="image imagen" id="imagen">
+
+                    <section class="row left m-4 " id="resultado">
+                        <h1 class="center">Ningún mensaje fue encontrado </h1>
+                        <p class="center">Ingrese el texto que desea encriptar o desencriptar</p>
+                    </section>
+
+                    <div class="col-5 col-sm-2 m-1 col-12">
+                        <button id="copiar" class="btn-info p-1 copiar" hidden>Copiar</button>
+                    </div>
+                </div>
+        </section>
+
+        <script src="JS/function.js"></script>
+    </body>
